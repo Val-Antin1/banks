@@ -7,34 +7,34 @@ export default function Header() {
   const navLinkClass = ({ isActive }) =>
     `relative transition-all duration-300 ${
       isActive
-        ? "text-amber-400 font-semibold after:w-full"
-        : "text-gray-300 hover:text-amber-400"
-    } after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-gradient-to-r after:from-amber-400 after:to-yellow-600 after:transition-all after:duration-300 ${
+        ? "text-blue-600 font-semibold after:w-full"
+        : "text-gray-700 hover:text-blue-600"
+    } after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-gradient-to-r after:from-blue-400 after:to-blue-600 after:transition-all after:duration-300 ${
       isActive ? "after:w-full" : "after:w-0 hover:after:w-full"
     }`
 
   const mobileNavLinkClass = ({ isActive }) =>
-    `block px-4 py-3 text-base font-medium transition-all duration-300 border-b border-slate-800/50 ${
+    `block px-4 py-3 text-base font-medium transition-all duration-300 border-b border-gray-300/50 ${
       isActive
-        ? "text-amber-400 bg-slate-800/50"
-        : "text-gray-300 hover:text-amber-400 hover:bg-slate-800/30"
+        ? "text-blue-600 bg-gray-100/50"
+        : "text-gray-700 hover:text-blue-600 hover:bg-gray-100/30"
     }`
 
   return (
-    <header className="bg-black bg-gradient-to-r from-black via-slate-950 to-black backdrop-blur-xl border-b border-slate-800/50 sticky top-0 z-50 shadow-lg shadow-black/50">
+    <header className="bg-white backdrop-blur-xl border-b border-gray-300/50 sticky top-0 z-50 shadow-lg shadow-gray-200/50">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-600 blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
             <img src="/logo.png" alt="BANKS Logo" className="relative w-10 h-10 object-contain" />
           </div>
           <div>
-            <span className="text-2xl font-extrabold text-amber-400 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 bg-clip-text text-transparent group-hover:from-amber-300 group-hover:to-yellow-500 transition-all duration-300">
+            <span className="text-2xl font-extrabold text-blue-600 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-blue-500 transition-all duration-300">
               BANKS
             </span>
-            <div className="text-xs text-gray-400 font-medium tracking-wider uppercase">Lock & Door Solution</div>
+            <div className="text-xs text-gray-600 font-medium tracking-wider uppercase">Lock & Door Solution</div>
           </div>
         </Link>
 
@@ -56,10 +56,10 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <a
-          href="https://wa.me/250798738972"
+          href="https://wa.me/0786902982"
           target="_blank"
           rel="noreferrer"
-          className="hidden md:flex relative bg-gradient-to-r from-amber-500 to-yellow-600 text-black px-7 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 hover:scale-105 transition-all duration-300 overflow-hidden group"
+          className="hidden md:flex relative bg-gradient-to-r from-blue-500 to-blue-600 text-white px-7 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300 overflow-hidden group"
         >
           <span className="relative z-10 flex items-center gap-2">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -67,23 +67,23 @@ export default function Header() {
             </svg>
             WhatsApp Us
           </span>
-          <div className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </a>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center bg-slate-900/50 rounded-lg border border-slate-800/50 hover:border-amber-500/50 transition-all duration-300"
+          className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center bg-gray-100/50 rounded-lg border border-gray-300/50 hover:border-blue-500/50 transition-all duration-300"
         >
-          <span className={`block h-0.5 w-6 bg-gray-300 transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-1'}`}></span>
-          <span className={`block h-0.5 w-6 bg-gray-300 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-          <span className={`block h-0.5 w-6 bg-gray-300 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-1'}`}></span>
+          <span className={`block h-0.5 w-6 bg-gray-700 transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-1'}`}></span>
+          <span className={`block h-0.5 w-6 bg-gray-700 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+          <span className={`block h-0.5 w-6 bg-gray-700 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-1'}`}></span>
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-black bg-gradient-to-b from-slate-950 to-black border-t border-slate-800/50">
+        <div className="md:hidden bg-white border-t border-gray-300/50">
           <nav className="px-6 py-4 space-y-1">
             <NavLink to="/" className={mobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>
               Home
@@ -102,10 +102,10 @@ export default function Header() {
           {/* Mobile CTA */}
           <div className="px-6 pb-4">
             <a
-              href="https://wa.me/250798738972"
+              href="https://wa.me/0786902982"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-600 text-black px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 hover:scale-105 transition-all duration-300"
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
