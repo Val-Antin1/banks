@@ -59,7 +59,7 @@ export default function Home() {
           <div className="mt-12 flex justify-center gap-6 flex-wrap">
             <Link
               to="/products"
-              className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-105 transition-all duration-300 overflow-hidden inline-flex items-center gap-2"
+              className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white w-full sm:w-auto px-8 py-4 sm:px-8 sm:py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-105 transition-all duration-300 overflow-hidden inline-flex items-center justify-center gap-2"
             >
               <span className="relative z-10">View Products</span>
               <svg className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
