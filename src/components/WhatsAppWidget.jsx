@@ -3,7 +3,7 @@ import { useState } from 'react'
 export default function WhatsAppWidget() {
   const [isHovered, setIsHovered] = useState(false)
 
-  const phoneNumber = "0786902982" // WhatsApp number from your header
+  const phoneNumber = "250786902982" // WhatsApp number with Rwanda country code (+250)
   const message = "Hi! I visited your HomeAccessories website and I'm interested in your products. Can you help me find what I'm looking for?"
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
