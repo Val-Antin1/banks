@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Home() {
   // Mock products data - Updated for lock & door solutions
   const products = [
@@ -55,16 +57,16 @@ export default function Home() {
           </p>
 
           <div className="mt-12 flex justify-center gap-6 flex-wrap">
-            <a
-              href="/products"
-              className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-105 transition-all duration-300 overflow-hidden inline-flex items-center gap-2"
+            <Link
+              to="/products"
+              className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-105 transition-all duration-300 overflow-hidden inline-flex items-center gap-2"
             >
               <span className="relative z-10">View Products</span>
               <svg className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
               </svg>
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
+            </Link>
 
             <a
               href={`https://wa.me/250786902982?text=${encodeURIComponent("Hi! I visited your HomeAccessories website and I'm interested in your products. Can you help me find what I'm looking for?")}`}
@@ -155,15 +157,15 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href="/products"
+            <Link
+              to="/products"
               className="inline-flex items-center gap-2 text-blue-600 hover:text-indigo-600 font-semibold text-lg group"
             >
               View All Products
               <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
