@@ -109,7 +109,7 @@ export default function Contact() {
                       </div>
                       <div className="flex-1">
                         <p className="text-gray-600 text-sm mb-1 font-medium">WhatsApp Support</p>
-                        <a href="https://wa.me/0786902982" target="_blank" rel="noreferrer" className="text-gray-900 hover:text-green-400 transition-colors font-semibold">
+                        <a href={`https://wa.me/250786902982?text=${encodeURIComponent("Hi! I visited your HomeAccessories website and I need help with a security solution.")}`} target="_blank" rel="noreferrer" className="text-gray-900 hover:text-green-400 transition-colors font-semibold">
                           Chat on WhatsApp
                         </a>
                       </div>

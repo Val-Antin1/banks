@@ -56,10 +56,10 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <a
-          href="https://wa.me/0786902982"
+          href={`https://wa.me/250786902982?text=${encodeURIComponent("Hi! I visited your HomeAccessories website and I'm interested in your products. Can you help me find what I'm looking for?")}`}
           target="_blank"
           rel="noreferrer"
-          className="hidden md:flex relative bg-gradient-to-r from-blue-500 to-blue-600 text-white px-7 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300 overflow-hidden group"
+          className="hidden md:flex relative bg-green-500 hover:bg-green-600 text-white px-7 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-green-500/30 hover:shadow-green-500/50 hover:scale-105 transition-all duration-300 overflow-hidden group"
         >
           <span className="relative z-10 flex items-center gap-2">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -102,10 +102,10 @@ export default function Header() {
           {/* Mobile CTA */}
           <div className="px-6 pb-4">
             <a
-              href="https://wa.me/0786902982"
+              href={`https://wa.me/250786902982?text=${encodeURIComponent("Hi! I visited your HomeAccessories website and I'm interested in your products. Can you help me find what I'm looking for?")}`}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300"
+              className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-green-500/30 hover:shadow-green-500/50 hover:scale-105 transition-all duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
