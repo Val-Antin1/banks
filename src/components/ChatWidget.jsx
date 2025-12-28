@@ -4,7 +4,7 @@ import './ChatWidget.css';
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { text: "Hello! I'm your AI assistant. How can I help you with home accessories today?", sender: 'bot' }
+    { text: "Hello! I'm Banks AI. How can I help you with home accessories today?", sender: 'bot' }
   ]);
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -69,7 +69,7 @@ const ChatWidget = () => {
       {isOpen && (
         <div className="chat-widget">
           <div className="chat-header">
-            <h3>AI Assistant</h3>
+            <h3>Banks AI</h3>
             <button className="close-button" onClick={toggleChat}>×</button>
           </div>
 
